@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    <title>קניות ומרכולים - מדריך אפטאון</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #fafafa; color: #2c3e50; line-height: 1.7; }
+        .top-nav { background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-content { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+        .back-btn { background: #f3f4f6; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; color: #374151; text-decoration: none; }
+        .back-btn:hover { background: #e5e7eb; }
+        .nav-title { font-size: 1.1rem; font-weight: 600; color: #1a1a1a; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; }
+        .section { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; }
+        .section-title { font-size: 1.5rem; font-weight: 600; color: #1a1a1a; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px solid #f3f4f6; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #f9fafb; padding: 12px; text-align: right; font-weight: 600; border: 1px solid #e5e7eb; }
+        td { padding: 12px; border: 1px solid #e5e7eb; }
+        .tip-box { background: #f0fdf4; padding: 18px 22px; border-radius: 10px; margin: 16px 0; border: 1px solid #d1fae5; border-right: 4px solid #10b981; }
+        @media (max-width: 768px) { .container { padding: 20px 16px; } h1 { font-size: 1.75rem; } .section { padding: 24px 20px; } table { font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="index.html" class="back-btn">← חזרה</a>
+            <span class="nav-title">קניות ומרכולים</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>קניות ומרכולים באפטאון</h1>
+
+        <div class="section">
+            <h2 class="section-title">איפה עושים קניות באזור?</h2>
+            <p>באפטאון יש כמה סופרים, ללא רכב:</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">קניות טבעוניות — איפה הכי נוח?</h2>
+            <p>(כל המקומות נגישים ברגל או באוטובוס קצר)</p>
+            
+            <table>
+                <tr>
+                    <th>מקום</th>
+                    <th>יתרונות לטבעונים</th>
+                    <th>חסרונות</th>
+                    <th>ממוצע מחירים</th>
+                </tr>
+                <tr>
+                    <td>Save-On-Foods Uptown</td>
+                    <td>מגוון תחליפי חלב + גבינות טבעוניות</td>
+                    <td>מחירים גבוהים</td>
+                    <td>סויה/שיבולת חלב ~$2–3, גבינות טבעוניות ~$5–8</td>
+                </tr>
+                <tr>
+                    <td>Walmart New Westminster</td>
+                    <td>הכי זול לתחליפים בסיסיים</td>
+                    <td>פחות מבחר "מותגי פרימיום"</td>
+                    <td>טופו ~$2–3, חלב צמחי ~$2–2.6</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">תחליפים נפוצים — מה ניתן להשיג באזור בקלות</h2>
+            <table>
+                <tr>
+                    <th>מוצר</th>
+                    <th>איפה נמצא הכי בקלות</th>
+                    <th>מחיר ממוצע</th>
+                </tr>
+                <tr>
+                    <td>חלב צמחי (שיבולת/שקדים/סויה)</td>
+                    <td>Save-On / Walmart</td>
+                    <td>$1.8–$3.2</td>
+                </tr>
+                <tr>
+                    <td>טופו</td>
+                    <td>Walmart / Save-On</td>
+                    <td>$2–$3 לבלוק</td>
+                </tr>
+                <tr>
+                    <td>גבינות טבעוניות (Daiya, Earth Island)</td>
+                    <td>Save-On</td>
+                    <td>$5–$8</td>
+                </tr>
+                <tr>
+                    <td>תחליפי בשר (Beyond, Gardein)</td>
+                    <td>Walmart / Save-On</td>
+                    <td>$7–$15 בחבילה</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">ירקות ופירות — מה בד"כ משתלם?</h2>
+            
+            <div class="tip-box">
+                <p><strong>זול כל השנה:</strong> תפוחים, בננות, גזר, ברוקולי → לרוב זול ובמחירים יציבים כל השנה</p>
+            </div>
+
+            <p><strong>פירות יער:</strong> יקר בעונות מסוימות, זול בקיץ</p>
+            <p><strong>בטטה וקישוא:</strong> יציבים במחיר רוב השנה</p>
+        </div>
+    </div>
+</body>
+</html>

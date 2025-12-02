@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    <title>תחבורה ציבורית - מדריך אפטאון</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #fafafa;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+
+        .top-nav {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .nav-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .back-btn {
+            background: #f3f4f6;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: #374151;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .back-btn:hover {
+            background: #e5e7eb;
+        }
+
+        .nav-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid #e5e7eb;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #f3f4f6;
+        }
+
+        .section-content {
+            color: #374151;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .section-content p {
+            margin-bottom: 16px;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin: 24px 0;
+            color: #1e40af;
+            border: 1px solid #dbeafe;
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .station-box {
+            background: #f0fdf4;
+            border-right: 4px solid #10b981;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #d1fae5;
+        }
+
+        .route-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 16px 0;
+        }
+
+        .route-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .tip-box {
+            background: #f0fdf4;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin: 16px 0;
+            border: 1px solid #d1fae5;
+            border-right: 4px solid #10b981;
+        }
+
+        .tip-title {
+            font-weight: 600;
+            color: #065f46;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin: 16px 0;
+            border: 1px solid #fecaca;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+
+        .distance-info {
+            background: #f9fafb;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+            border: 1px solid #e5e7eb;
+        }
+
+        .distance-info strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="index.html" class="back-btn">← חזרה</a>
+            <span class="nav-title">תחבורה ציבורית</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>תחבורה למשפחות באפטאון</h1>
+
+        <div class="section">
+            <h2 class="section-title">SkyTrain</h2>
+            <div class="section-content">
+                <p><strong>התחנה המרכזית הקרובה ביותר לרוב האזור היא:</strong></p>
+                
+                <div class="station-box">
+                    <strong>New Westminster Station</strong>
+                    <p>כ-15–25 דקות הליכה תלוי במיקום הבית</p>
+                    <p>קו 123 נוסע לשם ברחוב 8. בערך 4 או חמש תחנות</p>
+                    <p>קו 112 נוסע מרחוב 12</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">אוטובוסים</h2>
+            <div class="section-content">
+                <p>Uptown מחוברת מצוין באמצעות קווים:</p>
+                
+                <div class="route-list">
+                    <span class="route-badge">106</span>
+                    <span class="route-badge">123</span>
+                    <span class="route-badge">112</span>
+                    <span class="route-badge">155</span>
+                    <span class="route-badge">109</span>
+                    <span class="route-badge">128</span>
+                    <span class="route-badge">101</span>
+                </div>
+
+                <div class="distance-info">
+                    <strong>מרחק ממוצע מהבית לתחנת אוטובוס:</strong>
+                    <p>2–6 דקות הליכה ברוב הרחובות</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">טיפים למשפחות</h2>
+            <div class="section-content">
+                <div class="tip-box">
+                    <p><strong>ילדים מתחת לגיל 12 נוסעים בחינם.</strong></p>
+                </div>
+
+                <div class="warning-box">
+                    <strong>אל תעשו:</strong>
+                    <p>אל תתכנן יציאה בלי מטרייה — מזג האוויר משתנה מהר</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

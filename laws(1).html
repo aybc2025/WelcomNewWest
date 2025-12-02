@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    <title>חוקים והבדלים - מדריך אפטאון</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #fafafa; color: #2c3e50; line-height: 1.7; }
+        .top-nav { background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-content { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+        .back-btn { background: #f3f4f6; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; color: #374151; text-decoration: none; }
+        .back-btn:hover { background: #e5e7eb; }
+        .nav-title { font-size: 1.1rem; font-weight: 600; color: #1a1a1a; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; }
+        .section { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; }
+        .section-title { font-size: 1.5rem; font-weight: 600; color: #1a1a1a; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px solid #f3f4f6; }
+        .warning-box { background: #fef2f2; padding: 18px 22px; border-radius: 10px; margin: 16px 0; border: 1px solid #fecaca; border-right: 4px solid #ef4444; color: #991b1b; }
+        .law-item { background: #f9fafb; padding: 16px 20px; border-radius: 8px; margin: 12px 0; border-right: 4px solid #6b7280; }
+        .law-item strong { display: block; margin-bottom: 8px; color: #1a1a1a; }
+        @media (max-width: 768px) { .container { padding: 20px 16px; } h1 { font-size: 1.75rem; } .section { padding: 24px 20px; } }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="index.html" class="back-btn">← חזרה</a>
+            <span class="nav-title">חוקים והבדלים</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>חוקים והבדלים מהארץ</h1>
+
+        <div class="section">
+            <h2 class="section-title">מיחזור — זה לא "נחמד", זה חובה</h2>
+            <p><strong>הפרדה בין:</strong></p>
+            <ul style="margin-right: 20px; margin-top: 12px; line-height: 1.8;">
+                <li><strong>Trash</strong> — זבל רגיל</li>
+                <li><strong>Recycling</strong> — בקבוקים, קרטונים, קופסאות מזון</li>
+                <li><strong>Organics</strong> — שאריות מזון</li>
+                <li><strong>Glass</strong> - זכוכיות</li>
+            </ul>
+
+            <p style="margin-top: 16px;">רוב הבניינים מצוידים בשלושה פחים נפרדים.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">חוקי תנועה שמפתיעים ישראלים</h2>
+            
+            <div class="law-item">
+                <strong>מותר לפנות ימינה באדום</strong>
+                ברוב המקומות (אלא אם יש תמרור שאוסר)
+            </div>
+
+            <div class="law-item">
+                <strong>רמזור ירוק מהבהב</strong>
+                לא אומר שתיכף יהיה אדום, אלא זה מסמל לנהגים שזהו צומת שנשלט על ידי הולכי רגל
+            </div>
+
+            <div class="law-item">
+                <strong>פנייה שמאלה</strong>
+                מתבצעת בדרך כלל דרך התנועה שעוברת לכיוון הנגדי במקביל לנו, כשיש רווח מספיק או כשהרמזור התחלף מירוק לצהוב והתנועה מהכיוון הנגדי עצרה.
+            </div>
+
+            <div class="law-item">
+                <strong>חציית כביש כהולכי רגל</strong>
+                כדי לחצות כביש כהולכי רגל צריך בדרך כלל ללחוץ על כפתור, גם בצמתים מרומזרים.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
