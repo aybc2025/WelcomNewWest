@@ -1,6 +1,5 @@
 const CACHE_NAME = 'uptown-guide-v1';
 const urlsToCache = [
-  './',
   './index.html',
   './week-one.html',
   './transportation.html',
@@ -11,7 +10,9 @@ const urlsToCache = [
   './kids-activities.html',
   './laws.html',
   './timeline.html',
-  './manifest.json'
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 // Install event - cache files
