@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Icons</title>
+</head>
+<body>
+    <canvas id="canvas192" width="192" height="192"></canvas>
+    <canvas id="canvas512" width="512" height="512"></canvas>
+    <script>
+        function createIcon(canvasId, size) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#10b981');
+            gradient.addColorStop(1, '#059669');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // White circle
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size*0.35, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // House icon (simplified)
+            ctx.fillStyle = '#10b981';
+            ctx.font = `bold ${size*0.5}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('🏠', size/2, size/2);
+            
+            return canvas.toDataURL('image/png');
+        }
+        
+        const icon192 = createIcon('canvas192', 192);
+        const icon512 = createIcon('canvas512', 512);
+        
+        document.body.innerHTML += `<a href="${icon192}" download="icon-192.png">Download 192x192</a><br>`;
+        document.body.innerHTML += `<a href="${icon512}" download="icon-512.png">Download 512x512</a>`;
+    </script>
+</body>
+</html>

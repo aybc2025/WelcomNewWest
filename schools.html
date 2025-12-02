@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    <title>בתי ספר וגנים - מדריך אפטאון</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #fafafa; color: #2c3e50; line-height: 1.7; }
+        .top-nav { background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-content { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+        .back-btn { background: #f3f4f6; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; color: #374151; text-decoration: none; }
+        .back-btn:hover { background: #e5e7eb; }
+        .nav-title { font-size: 1.1rem; font-weight: 600; color: #1a1a1a; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; }
+        .subtitle { font-size: 1.1rem; color: #6b7280; margin-bottom: 40px; }
+        .section { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; }
+        .section-title { font-size: 1.5rem; font-weight: 600; color: #1a1a1a; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px solid #f3f4f6; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #f9fafb; padding: 12px; text-align: right; font-weight: 600; border: 1px solid #e5e7eb; }
+        td { padding: 12px; border: 1px solid #e5e7eb; }
+        .tip-box { background: #f0fdf4; padding: 18px 22px; border-radius: 10px; margin: 16px 0; border: 1px solid #d1fae5; border-right: 4px solid #10b981; }
+        .warning-box { background: #fef2f2; padding: 18px 22px; border-radius: 10px; margin: 16px 0; border: 1px solid #fecaca; border-right: 4px solid #ef4444; color: #991b1b; }
+        .info-box { background: #eff6ff; border-right: 4px solid #3b82f6; padding: 18px 22px; border-radius: 10px; margin: 20px 0; color: #1e40af; border: 1px solid #dbeafe; }
+        .step-list { counter-reset: step; list-style: none; margin-right: 0; }
+        .step-list li { counter-increment: step; padding: 16px; margin: 12px 0; background: #f9fafb; border-radius: 8px; border-right: 4px solid #3b82f6; position: relative; padding-right: 60px; }
+        .step-list li::before { content: counter(step); position: absolute; right: 16px; top: 50%; transform: translateY(-50%); background: #3b82f6; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+        @media (max-width: 768px) { .container { padding: 20px 16px; } h1 { font-size: 1.75rem; } .section { padding: 24px 20px; } }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="index.html" class="back-btn">← חזרה</a>
+            <span class="nav-title">בתי ספר וגנים</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>בתי ספר וגנים באפטאון</h1>
+        <p class="subtitle">רישום, בתי ספר ציבוריים ו-After School</p>
+
+        <div class="section">
+            <h2 class="section-title">בתי הספר הציבוריים באזור</h2>
+            <table>
+                <tr>
+                    <th>בית ספר</th>
+                    <th>מרחק הליכה</th>
+                    <th>כיתות</th>
+                    <th>הערות</th>
+                </tr>
+                <tr>
+                    <td><strong>Lord Kelvin Elementary</strong></td>
+                    <td>3-10 דק׳ ברוב האזור</td>
+                    <td>K–Grade 5</td>
+                    <td>הגדול והמרכזי באזור</td>
+                </tr>
+                <tr>
+                    <td><strong>Herbert Spencer Elementary</strong></td>
+                    <td>15-25 דק׳</td>
+                    <td>K–Grade 5</td>
+                    <td>תלוי ברחוב המגורים</td>
+                </tr>
+                <tr>
+                    <td><strong>Lord Tweedsmuir Elementary</strong></td>
+                    <td>15-25 דק׳</td>
+                    <td>K–Grade 5</td>
+                    <td>תלוי ברחוב המגורים</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>חשוב לדעת:</strong> הרישום תלוי בכתובת המגורים (Catchment), לא בבחירת ההורים. כל כתובת משויכת לבית ספר מסוים.
+            </div>
+
+            <div class="tip-box">
+                <strong>בתי ספר ציבוריים הם חינם!</strong> משלמים רק על חוגים, הסעות או תוספות מיוחדות.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">תהליך הרישום לבית ספר</h2>
+            <ol class="step-list">
+                <li>
+                    <strong>הכנת מסמכים</strong><br/>
+                    דרכון, COPR, הוכחת כתובת (חוזה שכירות), תעודות חיסונים באנגלית
+                </li>
+                <li>
+                    <strong>הגשת בקשה</strong><br/>
+                    דרך האתר: newwestschools.ca/our-schools/registration
+                </li>
+                <li>
+                    <strong>קביעת פגישה</strong><br/>
+                    שיחה או ביקור במשרד בית הספר
+                </li>
+                <li>
+                    <strong>השמה בכיתה</strong><br/>
+                    בית הספר יקבע את הכיתה המתאימה לפי גיל הילד
+                </li>
+            </ol>
+
+            <div class="tip-box">
+                <strong>כדאי:</strong> דאגו מראש לתיעוד חיסונים באנגלית (אפשר גם תעודה של טיפת חלב מתורגמת)
+            </div>
+
+            <div class="warning-box">
+                <strong>אל תעשו:</strong> אל תגיעו בלי הוכחת כתובת - לא ניתן לרשום בלי זה
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Before & After School Care</h2>
+            <p>תוכניות לטיפול בילדים לפני ואחרי בית הספר:</p>
+
+            <div class="info-box">
+                <strong>מה זה?</strong><br/>
+                תוכנית שמטפלת בילדים בשעות 7:00-9:00 בבוקר ו-15:00-18:00 אחר הצהריים
+            </div>
+
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th>סוג</th>
+                    <th>מחיר ממוצע</th>
+                    <th>הערות</th>
+                </tr>
+                <tr>
+                    <td>Before School</td>
+                    <td>$200-300/חודש</td>
+                    <td>7:00-9:00</td>
+                </tr>
+                <tr>
+                    <td>After School</td>
+                    <td>$300-450/חודש</td>
+                    <td>15:00-18:00</td>
+                </tr>
+                <tr>
+                    <td>Full Day (ימי חופש)</td>
+                    <td>$40-60/יום</td>
+                    <td>חופשות וימי פד״א</td>
+                </tr>
+            </table>
+
+            <div class="warning-box">
+                <strong>חשוב מאוד:</strong> אל תניחו שיהיו מקומות זמינים - רשימות ההמתנה יכולות להיות ארוכות מאוד. הירשמו מוקדם ככל האפשר!
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">קליטת ילדים בבית הספר</h2>
+            <div class="tip-box">
+                <strong>תמיכה בשפה:</strong> בתי הספר מציעים תוכניות ELL (English Language Learners) לילדים שאנגלית היא שפה שנייה עבורם.
+            </div>
+
+            <div class="info-box">
+                <strong>מה כולל?</strong>
+                <ul style="margin-right: 20px; margin-top: 8px;">
+                    <li>שיעורים מיוחדים באנגלית</li>
+                    <li>תמיכה בכיתה הרגילה</li>
+                    <li>ליווי במעבר להשתלבות מלאה</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>טיפים להורים:</strong></p>
+            <ul style="margin-right: 20px; margin-top: 12px; line-height: 1.8;">
+                <li>שימו דגש על קריאה באנגלית בבית - ספרייה מקומית היא משאב מעולה</li>
+                <li>השתתפו בפעילויות בית הספר - זו הזדמנות להכיר הורים אחרים</li>
+                <li>תקשורת עם המורים חשובה - אל תהססו לשאול שאלות</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
